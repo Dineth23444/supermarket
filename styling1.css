@@ -1,0 +1,188 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.logo{
+    height: 2.5%;
+    width: 2.5%;
+    float: left;
+    
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ff8c00;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover:before {
+    transform: scaleX(1);
+}
+
+nav ul li a:hover {
+    color: #ff8c00;
+}
+
+.welcomeimg{
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
+    height: 380px;
+    border-radius: 3px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+}
+.welcomeimg:hover{
+    transform: scale(1.05);
+}
+
+h3 {
+    color: #ff8c00;
+    margin-bottom: 20px;
+    outline: 2px solid #ff8c00;
+    padding: 5px;
+    text-align: center;
+}
+
+.welcinfo{
+    outline: 2px solid #ff8c00;
+    padding: 5px;
+    margin:5%;
+    background-color: #ff8c00;
+    border-radius: 5px;
+    color: white;
+}
+
+.smallimg{
+    display: block;
+    margin: 0 auto;
+    max-width: 500px;
+    height: 250px;
+    border-radius: 3px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+
+}
+
+strong{
+    color: #ffffff;
+}
+
+.container{
+    display:flex;
+}
+
+.branchinfo{
+    flex: 1;
+    margin: 4px;
+    padding: 2px;
+}
+.branchimg{
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+.map-frame {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Ensures that the table respects the width of the parent container */
+    word-wrap: break-word; /* Prevents overflow of content */
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    font-size: 16px; /* Default font size */
+}
+
+th {
+    background-color: #ff8c00;
+    color: #fff;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Additional CSS for responsive design */
+@media screen and (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block; /* Makes the table elements display as block for stacking */
+        width: 100%;
+    }
+    th {
+        position: absolute; /* Hides the headers */
+        top: -9999px;
+        left: -9999px;
+    }
+    tr {
+        border: 1px solid #ccc;
+        margin-bottom: 5px; /* Adds space between rows */
+    }
+    td {
+        border: none; /* Removes borders from cells */
+        position: relative;
+        padding-left: 50%; /* Provides space for pseudo-elements */
+        font-size: 18px; /* Increased font size for mobile */
+    }
+    td:before {
+        position: absolute;
+        top: 0;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        content: attr(data-label); /* Uses the data-label attribute for the pseudo-content */
+        font-weight: bold;
+        font-size: 18px; /* Increased font size for mobile */
+    }
+}

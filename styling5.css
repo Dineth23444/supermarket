@@ -1,0 +1,149 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.logo{
+    height: 2.5%;
+    width: 2.5%;
+    float: left;
+    
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ff8c00;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover:before {
+    transform: scaleX(1);
+}
+
+nav ul li a:hover {
+    color: #ff8c00;
+}
+
+h3 {
+    color: #ff8c00;
+    outline: 2px solid #ff8c00;
+    padding: 5px;
+    text-align: center;
+}
+
+.welcinfo{
+    outline: 2px solid #ff8c00;
+    padding: 10px;
+    margin:5%;
+    background-color: #ff8c00;
+    border-radius: 5px;
+    color: white;
+    width: 40%;
+}
+.container{
+    background-image: url(supermarket2.avif);
+    margin-left:17%;
+    margin-right:17%;
+    border-radius: 5px;
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.registration-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 10px;
+}
+
+.registration-form2{
+    height: 15%;
+    width: 20%;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap:30%;
+
+}
+
+.registration-form label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+.registration-form input,
+.registration-form select {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.registration-form select {
+    height: 150px;
+}
+
+.registration-form button {
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+}
+
+.registration-form button:hover {
+    background-color: #ff6500;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}

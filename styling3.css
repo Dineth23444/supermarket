@@ -1,0 +1,144 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.logo{
+    height: 2.5%;
+    width: 2.5%;
+    float: left;
+    
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ff8c00;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover:before {
+    transform: scaleX(1);
+}
+
+nav ul li a:hover {
+    color: #ff8c00;
+}
+
+.welcomeimg{
+    display: block;
+    margin: 0 auto;
+    max-width: 700px;
+    height: 320px;
+    border-radius: 3px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+}
+.welcomeimg:hover{
+    transform: scale(1.05);
+}
+
+h3 {
+    color: #ff8c00;
+    margin-bottom: 20px;
+    outline: 2px solid #ff8c00;
+    padding: 5px;
+    text-align: center;
+}
+
+.welcinfo{
+    padding: 2%;
+    outline: 2px solid #ff8c00;
+    border-radius: 5px;
+    background-color: #ff8c00;
+    color: white;
+    margin: 10px;
+
+}
+
+.container{
+    display:flex;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 80px;
+}
+
+.grid-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.grid-item h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.grid-item p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.add-to-cart {
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.add-to-cart:hover {
+    background-color: #ff6500;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
